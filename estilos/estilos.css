@@ -50,6 +50,7 @@
 
 .PrimeraColumna h1{
   font-size: 30px;
+  font-family: 'Antic Slab', serif;
 }
 
 .PrimeraColumna p{
@@ -57,11 +58,11 @@
 }
 
 .PrimeraColumna p{
-  font-size: 22px;
+  font-size: 30px;
   color: #c7c7c7;
   margin-top: 15px;
-  margin-right: 20px;
-  text-align: justify;
+  margin-right: 25px;
+  text-align: justify ;
 }
 
 .SegundaColumna{
@@ -70,6 +71,7 @@
 
 .SegundaColumna h1{
   font-size: 30px;
+  font-family: 'Antic Slab', serif;
 }
 
 .RedesSociales{
@@ -95,6 +97,7 @@
 
 .TerceraColumna h1{
   font-size: 30px;
+  font-family: 'Antic Slab', serif;
 }
 
 .Contactos{
@@ -115,6 +118,7 @@
 }
 
 .container-footer{
+  font-family: 'Handlee', cursive;
   color: #59626a;
   max-width: 100%;
   background: #00395d;
