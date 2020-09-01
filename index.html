@@ -113,7 +113,31 @@
                 <a href="#">Pol&iacute;tica de Privacidad</a>
             </div>
         </div>
-    </footer> -->
+    </footer>
+    <!--se realiso la funcion js de menu burger direcamenta por problemas que no lo asepto en el documento funciones.js 
+    ahora bien se tratara de solucionarlo para que quede mas en horden de igual manera pido un poco de ayuda en esta parte
+    a todos ustedes <3-->
+    <script>
+        console.log('hola mundo! es mi primera linea en js');
+
+
+        const menu = document.querySelector('.menu');
+        console.log(menu);
+        const burgerButton = document.querySelector('#burger-menu')
+        console.log(burgerButton);
+
+
+        burgerButton.addEventListener('click', hideShow)
+
+        function hideShow() {
+            if (menu.classList.contains('is-active')) {
+                menu.classList.remove('is-active');
+            } else {
+                menu.classList.add('is-active');
+            }
+
+        }
+    </script>
 </body>
 
 </html>
