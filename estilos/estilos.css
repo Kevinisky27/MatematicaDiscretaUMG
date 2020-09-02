@@ -215,7 +215,8 @@
             
             @media screen and (max-width: 767px) {
                 .burger-button {
-                    display: block;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
                 }
                 .header {
                     display: block;
