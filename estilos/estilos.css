@@ -34,10 +34,16 @@
                 background-color: #40658a;
                 color: #fffefe;
                 display: flex;
-                height: 50px;
                 align-items: center;
                 justify-content: center;
                 flex-wrap: wrap;
+            }
+            
+            .tile {}
+            
+            .header h1 {
+                text-align: center;
+                border-bottom: solid 1px #1b2127;
             }
             
             ol,
