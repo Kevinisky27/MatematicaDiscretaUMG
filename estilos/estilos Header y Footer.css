@@ -40,7 +40,16 @@
             }
             
 
-            /* .tile {} */
+            .title h1 {
+                font-family: 'Dancing Script', cursive;
+                font-size: 35px;
+            }
+
+            .link{
+                font-family: 'Open Sans Condensed', sans-serif;
+                text-align: center;
+                font-size: 15px;
+            }
             
             .header h1 {
                 text-align: center;
