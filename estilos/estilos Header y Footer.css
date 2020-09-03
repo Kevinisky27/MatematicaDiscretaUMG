@@ -4,13 +4,13 @@
                 box-sizing: border-box;
             }
             /* body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-} */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            } */
             /* Colores los cuales se Utilizaron 
- */
+            */
             /*Burger button*/
             
             .burger-button {
@@ -31,7 +31,7 @@
             /*Seccion de header*/
             
             .header {
-                background-color: #40658a;
+                background-color: #00395d;
                 color: #fffefe;
                 display: flex;
                 align-items: center;
@@ -84,8 +84,8 @@
                 background-color: #1b2127;
                 width: 100%;
                 /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
+                align-items: center;
+            justify-content: space-between; */
             }
             
             .footer img {
