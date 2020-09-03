@@ -39,6 +39,7 @@
                 flex-wrap: wrap;
             }
             
+
             /* .tile {} */
             
             .header h1 {
@@ -77,8 +78,9 @@
                 height: inherit;
                 padding: 0 10px;
             }
+
+
             /*Seccion de footer*/
-            
             .footer {
                 color: white;
                 background-color: #1b2127;
