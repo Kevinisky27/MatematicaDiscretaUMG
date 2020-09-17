@@ -33,19 +33,18 @@
             .header {
                 background-color: #00395d;
                 color: #fffefe;
-                display: flex;
+                display: block;
                 align-items: center;
                 justify-content: center;
                 flex-wrap: wrap;
             }
             
-
             .title h1 {
                 font-family: 'Dancing Script', cursive;
                 font-size: 35px;
             }
-
-            .link{
+            
+            .link {
                 font-family: 'Arsenal', sans-serif;
                 text-align: center;
                 font-size: 15px;
@@ -85,11 +84,11 @@
                 display: flex;
                 align-items: center;
                 height: inherit;
-                padding: 0 10px;
+                /* padding: 0 10px; */
+                padding: 0 30px 0px 30px;
             }
-
-
             /*Seccion de footer*/
+            
             .footer {
                 color: white;
                 background-color: #1b2127;
@@ -245,12 +244,19 @@
                 .header ol li {
                     height: 50px;
                 }
+                .header ol li {
+                    height: inherit;
+                    padding: 50px;
+                }
                 .header a {
-                    justify-content: center;
+                    ustify-content: center;
                     height: 40px;
-                    font-size: 2em;
+                    font-size: 15px;
                     text-decoration: underline;
-                    margin-bottom: .5em;
+                    /* margin-bottom: 14px; */
+                    padding: 10px 10px 10px;
+                    /* border-bottom: 100px; */
+                    /*  background: red */
                 }
                 .menu {
                     position: fixed;
@@ -261,7 +267,9 @@
                     width: 100vw;
                     /* height: 100vh; */
                     bottom: 0;
-                    display: flex;
+                    display: block;
+                    columns: 3;
+                    padding: 100px;
                     align-items: center;
                     justify-content: center;
                     transition: .3s;
