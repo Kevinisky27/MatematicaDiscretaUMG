@@ -273,7 +273,7 @@
                     bottom: 0;
                     display: block;
                     columns: 3;
-                    padding: 100px;
+                    /* padding: 100px; */
                     align-items: center;
                     justify-content: center;
                     transition: .3s;
