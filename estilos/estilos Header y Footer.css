@@ -39,9 +39,11 @@
                 flex-wrap: wrap;
             }
             
-            .title h1 {
-                font-family: 'Dancing Script', cursive;
-                font-size: 35px;
+            .title img {
+                position: initial;
+                width: 100%;
+                /* font-family: 'Dancing Script', cursive;
+                font-size: 35px; */
             }
             
             .link {
