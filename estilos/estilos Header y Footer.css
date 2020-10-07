@@ -15,7 +15,7 @@
             
             .burger-button {
                 width: 40px;
-                height: 50px;
+                /* height: 50px; */
                 padding: 12px;
                 border-radius: 50%;
                 background-color: rgba(0, 0, 0, .8);
@@ -276,11 +276,59 @@
                 }
             }
             
-            @media screen and (max-width: 1100px) {
+            @media screen and (max-width: 1536px) {
                 .PrimeraColumna,
                 .SegundaColumna,
                 .TerceraColumna {
                     margin-top: 40px;
+                }
+                .burger-button {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                }
+                .header {
+                    background-color: transparent;
+                    display: block;
+                    height: auto;
+                }
+                .header ol {
+                    display: block;
+                }
+                .header ol li {
+                    height: 50px;
+                }
+                .header ol li {
+                    height: inherit;
+                    padding: 50px;
+                }
+                .header a {
+                    /*  ustify-content: center; */
+                    height: 40px;
+                    font-size: 15px;
+                    text-decoration: underline;
+                    /* margin-bottom: 14px; */
+                    padding: 10px 10px 10px;
+                    /* border-bottom: 100px; */
+                    /*  background: red */
+                }
+                .menu {
+                    position: fixed;
+                    background-color: rgba(64, 101, 138, .9);
+                    z-index: 3;
+                    top: 0;
+                    left: -100vw;
+                    width: 100vw;
+                    /* height: 100vh; */
+                    bottom: 0;
+                    display: block;
+                    columns: 3;
+                    /* padding: 100px; */
+                    align-items: center;
+                    justify-content: center;
+                    transition: .3s;
+                }
+                .menu.is-active {
+                    left: 0;
                 }
             }
             
@@ -312,22 +360,6 @@
                     padding: 10px 10px 10px;
                     /* border-bottom: 100px; */
                     /*  background: red */
-                }
-                .menu {
-                    position: fixed;
-                    background-color: rgba(64, 101, 138, .9);
-                    z-index: 3;
-                    /* top: 0; */
-                    left: -100vw;
-                    width: 100vw;
-                    /* height: 100vh; */
-                    bottom: 0;
-                    display: block;
-                    columns: 3;
-                    /* padding: 100px; */
-                    align-items: center;
-                    justify-content: center;
-                    transition: .3s;
                 }
                 .menu.is-active {
                     left: 0;
