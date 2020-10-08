@@ -114,6 +114,8 @@
                 /* padding-bottom: 20px; */
                 text-align: center;
                 margin: 20px;
+                font-size: 30px;
+                color: #1b2127;
             }
             
             .blogs-posts-container .post-container {
@@ -129,6 +131,11 @@
             
             .blogs-posts-container .post-container p {
                 margin-bottom: 35px;
+            }
+            
+            .post-container strong {
+                font-size: 20px;
+                color: #030369;
             }
             
             .blogs-button {
