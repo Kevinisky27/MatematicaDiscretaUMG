@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    box-sizing: border-box;
+    font-family: 'Antic Slab', serif;
+}
+
+.grid-container img {
+    width: 100%;
+    padding: 10px;
+}
+
+.blogpost-img-container {
+    padding: 0 50px 40px;
+}
+
+.grid-container h3 {
+    border-bottom: 1px solid #cdd2da;
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+    color: #6495ed;
+}
+
+.blogpost-main-container article h1 {
+    font-size: 35px;
+}
+
+h1 strong {
+    color: #1b2127;
+    font-size: 35px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.colum {
+    columns: 3;
+}
+
+.eje {
+    color: #d71212;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.pract {
+    width: 100%;
+    padding: 50%;
+}

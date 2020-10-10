@@ -8,6 +8,9 @@
     <link rel="icon" type="image/png" href="../Images/Favicon/Favicon UMG.png">
     <link rel="stylesheet" href="../estilos/estilos Header y Footer.css">
     <link rel="stylesheet" href="../icomoon/style.css">
+    <link rel="stylesheet" href="../estilos/clase02.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -61,6 +64,85 @@
         </nav>
     </header>
 
+    <main class="grid-container blogpost-img-container">
+        <section class="blogpost-main-container">
+            <div class="grid-container">
+                <h3>Permutaciones y combinaci&oacute;nes</h3>
+                <section>
+                    <img src="../Images/imagenes de temas/1.png" alt="">
+                </section>
+                <div class="colum">
+                    <article>
+                        <h1> <strong>Permutaciones y Combinaci&oacute;nes</strong> </h1>
+                        <p>Las permutaciones son agrupaciones en las que importa el orden de los objetos. Las combinaciones son agrupaciones en las que el contenido importa, pero el orden no. Dos eventos son dependientes si el estado original de la situación
+                            cambia de un evento al otro, y esto altera la probabilidad del segundo evento.</p>
+                        <h1>Permutaciones con Repetici&oacute;n</h1>
+                        <p>Son las m&aacute;s f&aacute;ciles de calcular. Si tienes n cosas para elegir y eliges r de ellas, las permutaciones posibles son: <br> <strong class="eje">n × n × ... (r veces) = nr Porque hay n posibilidades para la primera elección, después hay
+                            n posibilidades para la segunda elección, y así hasta llegar a la última posición.</strong>
+                        </p>
+                        <h1>Permutación sin Repetici&oacute;n</h1>
+                        <p>Son los distintos grupos de elementos que se pueden hacer, de forma que dos grupos se diferencian únicamente en el orden de colocaci&oacute;n de los elementos. En este caso, se reduce el n&uacute;mero de opciones en cada paso.
+                            Por ejemplo: ¿cómo podr&iacute;as ordenar 16 bolas de billar? Después de elegir por ejemplo la "14" no puedes elegirla otra vez. As&iacute; que tu primera elecci&oacute;n tiene 16 posibilidades, y tu siguiente elecci&oacute;n
+                            tiene 15 posibilidades, despu&eacute;s 14, 13, etc. Y el total de permutaciones ser&iacute;a:
+                            <br>
+                            <strong class="eje">16 × 15 × 14 × 13 ... = 20.922.789.888.000</strong>
+                            <br> Pero a lo mejor no quieres elegirlas todas, s&oacute;lo 3 de ellas, así que sería solamente:
+                            <strong class="eje"> 16 × 15 × 14 = 3360</strong>
+                            <br> Es decir, hay 3.360 maneras diferentes de elegir 3 bolas de billar de entre 16 Nuestro "ejemplo de elegir en orden 3 bolas de 16" ser&iacute;a:
+                            <br>
+                            <strong class="eje">16!	=	16!	=	20.922.789.888.000	= 3360 <br>
+                                (16−3)!		13!		6.227.020.800	
+                                </strong>
+                            <br>¿De cu&aacute;ntas maneras se pueden dar primer y segundo premio entre 10 personas?
+                            <br>
+                            <strong class="eje">
+                            10!	=	10!	=	3.628.800	= 90
+                            <br>
+                            (10−2)!		8!		40.320	
+                            (que es lo mismo que: 10 × 9 = 90
+                        </strong>
+                        </p>
+                        <h1>Combinaciones con repetici&oacute;n</h1>
+                        <p>En realidad son las m&aacute;s dif&iacute;ciles de explicar, as&iacute; que las dejamos para luego.</p>
+                        <h1> Combinaciones sin repetici&oacute;n</h1>
+                        <p>As&iacute; funciona la loter&iacute;a. Los n&uacute;meros se eligen de uno en uno, y si tienes los n&uacute;meros de la suerte (da igual el orden) ¡entonces has ganado! La manera m&aacute;s f&aacute;cil de explicarlo es: imaginemos
+                            que el orden sí importa (permutaciones), después lo cambiamos para que el orden no importe.
+                        </p>
+                        <h1>
+                            ejemplos de combinaciones
+                        </h1>
+                        <p>Digamos que tenemos cinco sabores de helado: banana, chocolate, lim&oacute;n, fresa y vainilla. Puedes tomar 3 paladas. ¿Cuántas variaciones hay? Vamos a usar letras para los sabores: {b, c, l, f, v}. Algunos ejemplos son:
+                            <strong class="eje"> <br>
+                                •	{c, c, c} (3 de chocolate) <br>
+                                •	{b, l, v} (uno de banana, uno de lim&oacute;n y uno de vainilla) <br>
+                                •	{b, v, v} (uno de banana, dos de vainilla)
+                                </strong> <br>(Y para dejarlo claro: hay n=5 cosas para elegir, y eliges r=3 de ellas. El orden no importa, ¡y sí puedes repetir!)
+                        </p>
+                        <p>Bien, no puedo decirte directamente cómo se calcula, pero te voy a enseñar una técnica especial para que lo averigües tú mismo.</p>
+                        <br> Imagina que el helado está en contenedores, podrías decir "sáltate el primero, después 3 paladas, después sáltate los 3 contenedores siguientes" ¡y acabarás con 3 paladas de chocolate! Entonces es como si ordenaras a un robot
+                        que te trajera helado, pero no cambia nada, tendrás lo que quieres.
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h1> Permutaciones y combinaciónes</h1>
+                <div class="container">
+                    <form>
+                        <input class="A">esta es una entrada para n</input>
+                        </br>
+                        <input class="B"> esta es una entrada para r</input>
+                        </br>
+                        <input type="submit" class="submit"> haga clic para enviar</input>
+                    </form>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
     <footer class="footer">
         <div class="container-footer-all">
             <div class="container-body">
@@ -126,6 +208,7 @@
             <div class="TerminosCondiciones">
                 <a href="#">Informaci&oacute;n Sobre el Grupo</a> |
                 <a href="#">Pol&iacute;tica de Privacidad</a>
+                <script src="../funciones/clase02.js"></script>
             </div>
         </div>
     </footer>
