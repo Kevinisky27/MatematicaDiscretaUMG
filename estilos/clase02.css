@@ -49,3 +49,8 @@ p {
     font-size: 16px;
     text-decoration: underline;
 }
+
+.pract {
+    width: 100%;
+    padding: 50%;
+}
