@@ -8,6 +8,8 @@
     <link rel="icon" type="image/png" href="../Images/Favicon/Favicon UMG.png">
     <link rel="stylesheet" href="../estilos/estilos Header y Footer.css">
     <link rel="stylesheet" href="../icomoon/style.css">
+    <link rel="stylesheet" href="../estilos/clase01.css">
+    <link rel="stylesheet" href="../estilos/clase03.css">
 </head>
 
 <body>
@@ -59,6 +61,71 @@
             </ul>
         </nav>
     </header>
+    <section class="contenido">
+        <h1>
+            Teoría de Grafos (continuación)
+        </h1>
+        <h2>Grado de Vértice</h2>
+        <p>
+            El grado de un vértice se puede definir como la cantidad de aristas que parten desde o hacia un mismo vértice
+            <br>
+            <div class="conter-img2">
+                <img src="../Images/imagenes de temas/teoria de grafos continuación.jpg" alt="fuente: documento de power point">
+            </div>
+        </p>
+        <h1>Rutas y Circuitos de Euler</h1>
+        <p> <strong>Ruta de Euler:</strong> Una ruta o camino de Euler es una trayectoria que contiene todas las aristas del grafo y recorre una arista exactamente una vez
+        </p>
+        <p><strong>Condiciones: </strong> <br>El Grafo debe de ser conexo Exactamente 2 vértices son de grado impar, todos los demás deben de ser de grado par Se comienza en uno de los vértices de grado impar y se termina en el otro vértice impar
+        </p>
+        <h2>Ejemplo:</h2>
+        <p><strong>Condiciones para que sea una Ruta de Euler:</strong></p>
+        <p>El Grafo debe de ser conexo: Si es Conexo <br> Exactamente 2 vértices son de grado impar, todos los demás deben de ser de grado par: Vértices grado impar 4 y 0, vértices con grado par 1, 2, 3 <br> Se comienza en uno de los vértices de grado impar
+            y se termina en el otro vértice impar: 4, 3, 0, 1, 2, 0
+        </p>
+        <div class="conter-img2">
+            <p>camino de Euler</p>
+            <img src="../Images/imagenes de temas/eu.png" alt="fuente: documento de power point">
+        </div>
+        <h1>Circuito de Euler</h1>
+        <p>Un circuito de Euler es un Camino de Euler con la diferencia que empieza y termina en el mismo vertice es decir es un camino cerrado que recorre cada arista exactamente una vez
+        </p>
+        <p><strong>Condiciones: </strong> El grafo es conexo Todos los vértices son de grado par Se comienza y se termina en el mismo vertice
+        </p>
+        <h2>Ejemplo:</h2>
+        <p><strong>Condiciones para que sea una Circuito de Euler: </strong> <br> El grafo es conexo: <br> Si Todos los vértices son de grado par: Si Se comienza y se termina en el mismo vertice: <br> 1, 2, 0, 4, 3, 0, 1 0, 3, 4, 0, 2, 1, 0 4, 3, 0, 1, 2,
+            0, 4 ………
+        </p>
+        <div class="conter-img2">
+            <p>camino de Euler</p>
+            <img src="../Images/imagenes de temas/cir.png" alt="fuente: documento de power point">
+        </div>
+        <h1>Ciclos y Caminos Hamiltonianos</h1>
+        <p>Un camino hamiltoniano, en el campo matemático de la teoría de grafos, es un camino de un grafo, una sucesión de aristas adyacentes, que visita todos los vértices del grafo una sola vez. Si además el último vértice visitado es adyacente al primero,
+            el camino es un ciclo hamiltoniano.
+        </p>
+        <h2>Ejemplo:</h2>
+        <div class="conter-img2">
+            <p>Ciclos y Caminos Hamiltonianos</p>
+            <img src="../Images/imagenes de temas/camino.png" alt="fuente: documento de power point">
+        </div>
+
+        <h2>Ejemplo:</h2>
+        <div class="conter-img2">
+            <p>Ejemplo Ciclo Hamiltoniano</p>
+            <img src="../Images/imagenes de temas/ciha.png" alt="fuente: documento de power point">
+        </div>
+        <h1>Coloración de Grafos</h1>
+        <p>En Teoría de grafos, la coloración de grafos es un caso especial de etiquetado de grafos; es una asignación de etiquetas llamadas colores a elementos del grafo. De manera simple, una coloración de los vértices de un grafo tal que ningún vértice
+            adyacente comparta el mismo color es llamado vértice coloración.
+        </p>
+        <h2>Ejemplo:</h2>
+        <div class="conter-img2">
+            <p>Ejemplo Ciclo Hamiltoniano</p>
+            <img src="../Images/imagenes de temas/colo.png" alt="fuente: documento de power point">
+        </div>
+    </section>
+
 
     <footer class="footer">
         <div class="container-footer-all">
