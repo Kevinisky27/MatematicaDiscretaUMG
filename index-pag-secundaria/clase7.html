@@ -8,6 +8,8 @@
     <link rel="icon" type="image/png" href="../Images/Favicon/Favicon UMG.png">
     <link rel="stylesheet" href="../estilos/estilos Header y Footer.css">
     <link rel="stylesheet" href="../icomoon/style.css">
+    <link rel="stylesheet" href="../estilos/clase01.css">
+    <link rel="stylesheet" href="../estilos/clase03.css">
 </head>
 
 <body>
@@ -60,7 +62,74 @@
             </ul>
         </nav>
     </header>
-
+    <section class="contenido">
+        <h1>
+            Teoría de Grafos
+        </h1>
+        <h2> <strong>Grafos</strong> </h2>
+        <p>
+            <br>
+            <div class="conter-img2">
+                <img src="../Images/imagenes de temas/teoria de grafos.jpg" alt="fuente: documento de power point">
+            </div>
+            <p>
+                En matemáticas y en ciencias de la computación, la teoría de grafos estudia las propiedades de los grafos.
+            </p>
+        </p>
+        <p>
+            Un grafo es un conjunto, no vacío, de objetos llamados vértices (o nodos) y una selección de pares de vértices, llamados aristas (edges en inglés) que pueden ser orientados o no.
+        </p>
+        <p>
+            Típicamente, un grafo se representa mediante una serie de puntos (los vértices) conectados por líneas (las aristas).
+        </p>
+        <div class="conter-img2">
+            <img src="../Images/imagenes de temas/grafos1.png" alt="fuente: documento de power point">
+        </div>
+        <h2>
+            ¿Cuales son los Complementos del Grafo?
+        </h2>
+        <p><strong>Aristas adyacentes:</strong> dos aristas son adyacentes si tienen un vertice común </p>
+        <div class="conter-img2">
+            <img src="../Images/imagenes de temas/grafo2.png" alt="fuente: documento de power point">
+        </div>
+        <p> <strong>Lazos:</strong> es una arista cuyos extremos inciden sobre el mismo vertice</p>
+        <div class="conter-img2">
+            <img src="../Images/imagenes de temas/grafo3.png" alt="fuente: documento de power point">
+        </div>
+        <p><strong>Aristas paralelas: </strong> Dos o más aristas que son incidentes (que se conectan) al menos 2 vértices iguales.</p>
+        <div class="conter-img2">
+            <img src="../Images/imagenes de temas/grafo4.png" alt="fuente: documento de power point">
+        </div>
+        <p><strong>Vértices adyacentes: </strong> los vértices son adyacentes cuando conparten el mismo arista.</p>
+        <div class="conter-img2">
+            <img src="../Images/imagenes de temas/grafo5.png" alt="fuente: documento de power point">
+        </div>
+        <h2>Tipos de Grafos</h2>
+        <p>Un grafo dirigido o grafo orientado, es un tipo de grafo en el cual el conjunto de las aristas tiene una dirección definida, a diferencia del grafo generalizado, en el cual la dirección puede estar especificada o no.
+        </p>
+        <p>Grafo simple o simplemente grafo es aquel que acepta una sola una arista uniendo dos vértices cualesquiera. Esto es equivalente a decir que una arista cualquiera es la única que une dos vértices específicos. Es la definición estándar de un grafo.
+            No contiene aristas paralelas, lazos ni aristas dirigidos.
+        </p>
+        <p>Un grafo se dice conexo si, para cualquier par de vértices a y b en G, existe al menos una trayectoria (una sucesión de vértices adyacentes que no repita vértices) de a a b.
+        </p>
+        <div class="conter-img2">
+            <img src="../Images/imagenes de temas/grafo7.png" alt="fuente: documento de power point">
+        </div>
+        <div class="conter-img2">
+            <img src="../Images/imagenes de temas/grafo8.png" alt="fuente: documento de power point">
+        </div>
+        <h2>Matriz de Adyacencia</h2>
+        <p>Una de las maneras más fáciles de implementar un grafo es usar una matriz bidimensional. En esta implementación de matriz, cada una de las filas y columnas representa un vértice en el grafo. El valor que se almacena en la celda en la intersección
+            de la fila X y la columna Y indica si hay una arista desde el vértice X al vértice Y.
+        </p>
+        <h2>Ejemplos:</h2>
+        <p>Dibujar un grafo no orientado y su matriz de adyacencia según lo que expresan los siguientes conjuntos:
+        </p>
+        <p><strong>
+            V = {a, b, c, d, e} <br>
+            A = {ab, bc, be, ed, de, ad} 
+            </strong></p>
+    </section>
     <footer class="footer">
         <div class="container-footer-all">
             <div class="container-body">
