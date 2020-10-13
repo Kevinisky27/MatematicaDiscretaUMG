@@ -8,6 +8,8 @@
     <link rel="icon" type="image/png" href="../Images/Favicon/Favicon UMG.png">
     <link rel="stylesheet" href="../estilos/estilos Header y Footer.css">
     <link rel="stylesheet" href="../icomoon/style.css">
+    <link rel="stylesheet" href="../estilos/clase01.css">
+    <link rel="stylesheet" href="../estilos/clase03.css">
 </head>
 
 <body>
@@ -60,6 +62,109 @@
             </ul>
         </nav>
     </header>
+    <section class="contenido">
+        <h1>
+            Teoría de Arboles
+        </h1>
+        <p>
+            <h2>Definición: </h2>
+            <p>Desde el punto de vista conceptual, un árbol es un caso particular de grafo, es un objeto que comienza con una raíz y se extiende en ramificaciones o lineas que terminan en un nodo.
+            </p>
+            <p>Representan la estructura no-lineal y dinámica de datos más importante en computación. Dinámica porque puede cambiar durante la ejecución de un programa y no-lineal porque a cada elemento del árbol pueden seguirle varios elementos.
+            </p>
+            <p>Es un conjunto de nodos y líneas. Un nodo es un elemento de información que reside en un árbol. Una línea es un par de nodos ordenados,
+                <u,v>, y a la secuencia de lineas se le llama ruta (path).
+            </p>
+            <div class="conter-img2">
+                <img src="../Images/imagenes de temas/teoria de arboles.gif" alt="fuente: documento de power point">
+            </div>
+            <h3>Ejemplo:</h3>
+            <div class="conter-img2">
+                <img src="../Images/imagenes de temas/arbol.png" alt="fuente: documento de power point">
+            </div>
+            <p>Un árbol es una estructura jerárquica aplicada a un conjunto de elementos llamados nodos, uno de los cuales es conocido como raíz. Además, se crea una relación o parentesco entre los nodos que da lugar a términos como padre, hijo, hermano,
+                antecesor, sucesor, ancestro.
+            </p>
+            <p>En ciencias de la computación, un árbol es una estructura de datos comúnmente usada, que emula la estructura de un árbol con un conjunto de nodos conectados.
+            </p>
+            <p>Cada uno de los nodos de un árbol tiene cero o más nodos hijos, que están por debajo de él (en ciencias de la computación, al contrario que en la naturaleza, los árboles crecen hacia abajo, no hacia arriba).
+            </p>
+            <p>El nodo del cual otro es hijo, es llamado su nodo padre.
+            </p>
+            <p>Un hijo tiene como máximo un padre; un nodo sin padre es llamado nodo raíz (o simplemente raíz).
+            </p>
+            <p>Los nodos sin hijos son llamados hojas
+            </p>
+            <h2>Propiedades</h2>
+            <p>Tiene un nodo al que se le llama "nodo raíz" o raíz del árbol, éste no tiene "padre".
+            </p>
+            <p>Todos los nodos tienen una sola línea de entrada, excepto el nodo raíz, éste no tiene línea de entrada.
+            </p>
+            <p>Existe una "única" ruta del nodo raíz a todos los demás nodos del árbol.
+            </p>
+            <p>Si existe una ruta
+                <a,b>, entonces "b" es el "hijo" de "a" y es el nodo raíz de un sub-árbol.
+            </p>
+            <p>Todos los nodos que son descendientes de un mismo nodo "padre", son "hermanos".
+            </p>
+            <p>Todo nodo que no tiene ramificaciones (hijos), es un nodo "terminal" u "hoja".
+            </p>
+            <p>Todo nodo que no es raíz ni terminal es un nodo "interior".
+            </p>
+            <p><strong>"Grado"</strong> es el número de descendientes directos de un determinado nodo.
+            </p>
+            <p> <strong>"Grado del árbol"</strong> es el máximo grado de todos los nodos del árbol.
+            </p>
+            <p> <strong>"Nivel"</strong> es el número de ramificaciones que se deben recorrer para llegar a un determinado nodo. El nodo raíz tiene nivel 1.
+            </p>
+            <p> <strong>"Altura del árbol"</strong> es el máximo número  de niveles  de todos los nodos del árbol.
+            </p>
+            <h1>Longitud de un Árbol</h1>
+            <p>Es el número de arcos que deben ser recorridos desde la raíz hasta el nodo X.
+            </p>
+            <p>Cuando hablamos de longitud de un árbol, debemos diferenciar los siguientes conceptos:
+            </p>
+            <p><strong>de camino. <br>Longitud de camino interno <br>Longitud de camino externo. <br></strong></p>
+            <div class="conter-img2">
+                <img src="../Images/imagenes de temas/longi.png" alt="fuente: documento de power point">
+            </div>
+            <h1>Longitud de camino</h1>
+            <p>Se define la longitud de camino X como el número de arcos que deben ser recorridos para llegar, desde la raíz, al nodo X.
+            </p>
+            <p>Por definición, la raíz tiene longitud de camino 1, sus descendientes directos tienen longitud de camino 2 y así sucesivamente.
+            </p>
+            <div class="conter-img2">
+                <img src="../Images/imagenes de temas/caminito.png" alt="fuente: documento de power point">
+            </div>
+            <h1>Longitud de Camino Interno</h1>
+            <p>Es la suma de las longitudes de camino de todos los nodos del árbol.
+            </p>
+            <div class="conter-img2">
+                <img src="../Images/imagenes de temas/fifu.png" alt="fuente: documento de power point">
+            </div>
+            <p>En donde i = nivel del árbol, h = altura del árbol, ni = número de nodos en el nivel "i".</p>
+            <h1>Media de Longitud de Camino Interno</h1>
+            <p>Es el número de arcos que deben ser recorridos en promedio para llegar de la raíz a un nodo cualquiera del árbol.</p>
+            <strong>LCIM = LCI/n</strong>
+            <p>En donde LCI = longitud de camino interno y "n" =número de nodos del árbol.</p>
+            <h1>Longitud de Camino Externo</h1>
+            <p> <strong>Árbol extendido: </strong> es aquel en el que el número de hijos de cada nodo es igual al grado del árbol.Para que se cumpla esta condición si es necesario se le agregan nodos especiales al árbol, tantos como sea necesario para que
+                se cumpla la condición.</p>
+            <p> <strong>Nodos especiales: </strong> su objetivo es reemplazar las ramas vacías o nulas y no pueden tener descendientes.
+            </p>
+            <p>La longitud de camino externo LCE es la suma de las longitudes de camino de todos los nodos especiales de un árbol.</p>
+            <div class="conter-img2">
+                <img src="../Images/imagenes de temas/fifu2.png" alt="fuente: documento de power point">
+            </div>
+            <p>
+                En donde "h" = altura del árbol, "i" = nivel del árbol y "nei" = número de nodos especiales en el nivel "i".
+            </p>
+            <h1>Media de la Longitud de Camino Externo</h1>
+            <p>Es el número de arcos que deben ser recorridos en promedio desde la raíz hasta un nodo especial cualquiera del árbol.</p>
+            <strong>LCEM = LCE/ne</strong>
+
+
+    </section>
 
     <footer class="footer">
         <div class="container-footer-all">
