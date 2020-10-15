@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="icon" type="image/png" href="../Images/Favicon/Favicon UMG.png">
+    <title>Algoritmo Euclidiano
+    </title>
     <link rel="stylesheet" href="../estilos/estilos Header y Footer.css">
     <link rel="stylesheet" href="../icomoon/style.css">
+    <link rel="stylesheet" href="../estilos/Clase06.css">
 </head>
 
 <body>
@@ -16,51 +17,34 @@
             <img src="../Images/Diseños/Diseño página central/Cabecera Central Matemática Discreta.png" alt="">
         </figure>
         <input type="checkbox" id="btn-menu">
-        <label for="btn-menu"><i class="icon-menu1 burger-button" ></i></label>
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a class="link" href="../index-pag-secundaria/clase.html">Principio de  Addici&oacute;n y  Multiplicaci&oacute;n </a>
-                </li>
-                <li>
-                    <a class="link" href="../index-pag-secundaria/clase2.html">Permutaciones y  combinaciones </a>
-                </li>
-                <li>
-                    <a class="link" href="../index-pag-secundaria/clase3.html">Teoria de  conjuntos </a>
-                </li>
-                <li>
-                    <a class="link" href="../index-pag-secundaria/clase4.html">Diagramas de Venn  y  Producto Carteciano </a>
-                </li>
-                <li>
-                    <a class="link" href="../index-pag-secundaria/clase5.html">Introducci&oacute;n Matem&aacute;tica </a>
-                </li>
-                <li>
-                    <a class="link" href="../index-pag-secundaria/clase6.html">Algoritmo  de la  Divisi&oacute;n </a>
-                </li>
-                <li>
-                    <a class="link" href="../index-pag-secundaria/clase7.html">Teor&iacute;a  de Grafos </a>
-                </li>
-                <li>
-                    <a class="link" href="../index-pag-secundaria/clase8.html">Teor&iacute;a  de  Grafos Segunda parte  </a>
-                </li>
-                <li>
-                    <a class="link" href="../index-pag-secundaria/clase9.html">Teoria de  Arboles I </a>
-                </li>
-                <li>
-                    <a class="link" href="index-pag-secundaria/clase10.html">Teoria de  Arboles II </a>
-                </li>
-                <li>
-                    <a class="link" href="../index-pag-secundaria/clase11.html">Álgebra Vectorial </a>
-                </li>
-                <li>
-                    <a class="link" href="../index-pag-secundaria/clase12.html">Lorem </a>
-                </li>
 
-                </li>
-            </ul>
-        </nav>
     </header>
-
+    <section class="Dinamico-pro">
+        <div id="card">
+            <div class="card__box">
+                <h4>Algoritmo de la División</h4>
+                <div class="content">
+                    <div class="content__entry">
+                        <input class="content__entry__input" type="text" name="a">
+                        <div class="content__entry__operations">
+                            <div class="content__entry__operations__operation content__entry__operations__operation--division">&nbsp;÷&nbsp;</div>
+                        </div>
+                        <input class="content__entry__input" type="text" name="d">
+                    </div>
+                    <div class="content__buttons">
+                        <div class="content__buttons__result button-result">&nbsp;Resultado&nbsp;</div>
+                    </div>
+                    <div class="content__display">
+                        <div class="content__display__result div-result"></div>
+                        <div class="content__display__result mod-result"></div>
+                        <div class="content__display__result exp-result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="alerts">
+        </div>
+    </section>
     <footer class="footer">
         <div class="container-footer-all">
             <div class="container-body">
@@ -129,6 +113,8 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript" src="../funciones/clase06.js"></script>
 </body>
 
 </html>
