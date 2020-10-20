@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="../icomoon/style.css">
     <link rel="stylesheet" href="../estilos/clase02.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--adicion de funcion para botones de mostrar y ocultar-->
+    <script src="../funciones/clase01.js"></script>
+    <script src="../funciones/adicionales.js"></script>
 
 </head>
 
@@ -67,7 +70,7 @@
     <main class="grid-container blogpost-img-container">
         <section class="blogpost-main-container">
             <div class="grid-container">
-                <h3>Permutaciones y combinaci&oacute;nes</h3>
+                <h3><br><br><br>Permutaciones y combinaci&oacute;nes<br><br><br></h3>
                 <section>
                     <img src="../Images/imagenes de temas/1.png" alt="">
                 </section>
@@ -79,6 +82,8 @@
                         <h1>Permutaciones con Repetici&oacute;n</h1>
                         <p>Son las m&aacute;s f&aacute;ciles de calcular. Si tienes n cosas para elegir y eliges r de ellas, las permutaciones posibles son: <br> <strong class="eje">n × n × ... (r veces) = nr Porque hay n posibilidades para la primera elección, después hay
                             n posibilidades para la segunda elección, y así hasta llegar a la última posición.</strong>
+                            La fórmula para calcular las permutaciones con repetición es la siguiente:
+                            <img src="../Images/adicionales/pcr.jpg" alt="">
                         </p>
                         <h1>Permutación sin Repetici&oacute;n</h1>
                         <p>Son los distintos grupos de elementos que se pueden hacer, de forma que dos grupos se diferencian únicamente en el orden de colocaci&oacute;n de los elementos. En este caso, se reduce el n&uacute;mero de opciones en cada paso.
@@ -99,14 +104,24 @@
                             10!	=	10!	=	3.628.800	= 90
                             <br>
                             (10−2)!		8!		40.320	
-                            (que es lo mismo que: 10 × 9 = 90
+                            (que es lo mismo que: 10 × 9 = 90).
+                            La fórmula para calcular las permutaciones sin repetición es la siguiente:
+                            <img src="../Images/adicionales/psr.png" alt="">
                         </strong>
                         </p>
                         <h1>Combinaciones con repetici&oacute;n</h1>
-                        <p>En realidad son las m&aacute;s dif&iacute;ciles de explicar, as&iacute; que las dejamos para luego.</p>
-                        <h1> Combinaciones sin repetici&oacute;n</h1>
+                        <p>En este tipo de combinaciones, se puede repetir el número de opciones a elegir. Por ejemplo, si se tiene una cantidad
+                            de 10 opciones entre las que hay que elegir 6, las combinaciones también incluyen aquellas en las que incluso, todas
+                            las 6 opciones a elegir son únicamente una opción de entre las 10. La fórmula para calcular las combinaciones con repetición es
+                        la siguiente:</p>
+                        <img src="../Images/adicionales/ccr.png" alt=""><br><br><br>
+                        
+
+                        <h1><br><br><br> Combinaciones sin repetici&oacute;n</h1>
                         <p>As&iacute; funciona la loter&iacute;a. Los n&uacute;meros se eligen de uno en uno, y si tienes los n&uacute;meros de la suerte (da igual el orden) ¡entonces has ganado! La manera m&aacute;s f&aacute;cil de explicarlo es: imaginemos
                             que el orden sí importa (permutaciones), después lo cambiamos para que el orden no importe.
+                            <br>La fórmula para calcular las combinaciones sin repetición es la siguiente:
+                            <img src="../Images/adicionales/csr.png" alt="">
                         </p>
                         <h1>
                             ejemplos de combinaciones
@@ -121,8 +136,101 @@
                         <p>Bien, no puedo decirte directamente cómo se calcula, pero te voy a enseñar una técnica especial para que lo averigües tú mismo.</p>
                         <br> Imagina que el helado está en contenedores, podrías decir "sáltate el primero, después 3 paladas, después sáltate los 3 contenedores siguientes" ¡y acabarás con 3 paladas de chocolate! Entonces es como si ordenaras a un robot
                         que te trajera helado, pero no cambia nada, tendrás lo que quieres.
+                        <!-- fin de la información-->
+                        
                     </article>
+                    
                 </div>
+                <br><br><br>
+                <center><h3>EJERCICIOS</h3></center>
+                <p>En base a la información anterior, resuelve en tu cuaderno los siguientes ejercicios y corrobora las respuestas.</p>
+                <br><br>
+                
+                <div>
+                    <h1>Permutaciones con Repetición</h1> 
+                <p>
+                ¿Cuántas palabras diferentes se pueden formar con las letras de la palabra BANANA?
+                </p>
+                    <button type="button" value=" Mostrar" onclick="mostrar(); ">Mostrar resultado</button>
+                    <button type="button" value=" Ocultar" onclick="ocultar();">Ocultar resultado</button>
+                    <div id="resultado1">
+                        <p>
+                            Número de veces que se repite la letra B = 1
+                            Número de veces que se repite la letra A = 3
+                            Número de veces que se repite la letra N = 2
+                            Número total de elementos: n = 1+3+2  ➜  n = 6
+                        </p>
+                        <img src="../Images/adicionales/pcrr.png" alt="">
+                        <p>
+                        En total, se pueden formar 60 palabras diferentes con las letras de la palabra BANANA
+                        </p><br><br>
+                    </div>
+                </div>
+                <br><br>
+                
+                
+                <div>
+                    <h1>Permutaciones sin Repetición</h1> 
+                    <p>
+                        ¿De cuántas maneras se pueden disponer 7 personas en una fila?<br>
+                            
+                        </p>
+                    <button type="button" value=" Mostrar" onclick="mostrar3(); ">Mostrar resultado</button>
+                    <button type="button" value=" Ocultar" onclick="ocultar3();">Ocultar resultado</button>
+                    <div id="resultado3">
+                        <p>
+                            Si n = 7<br>
+                              Pn = n! = 7! = 7 x 6 x 5 x 4 x 3 x 2 x 1<br>
+                              7! = (7 x 6)(5 x 4)(3 x 2)(1)<br>
+                              7! = (42 x 20)(6 x 1)<br>
+                              7! = (840 x 6)<br>
+                              7! =  5.040<br>
+
+                            Respuesta: 7 personas se pueden disponer en una fila de 5.040 maneras
+                        </p>
+                    
+                    </div>
+                </div>
+
+                <div>
+                    <br><br>
+                    <h1>Combinaciones con Repetición</h1> 
+                <p>
+                    En una bodega hay cinco tipos diferentes de botellas. ¿De cuántas formas se pueden elegir cuatro botellas?
+                </p>
+                    <button type="button" value=" Mostrar" onclick="mostrar4(); ">Mostrar resultado</button>
+                    <button type="button" value=" Ocultar" onclick="ocultar4();">Ocultar resultado</button>
+                    <div id="resultado4">
+                        
+                        <img src="../Images/adicionales/ccrr.png" alt="">
+                        <p>
+                        En total, son 70 formas en las que se pueden elegir las 4 botellas. 
+                        </p><br><br>
+                    </div>
+                </div>
+
+                <div>
+                    <h1>Combinaciones sin Repetición</h1> 
+                    <p>
+                        ¿De cuántas maneras se pueden combinar de 2 en 2 los números {1,2,3,4,5} sin repetirse?<br>
+                    
+                        </p>
+                    <button type="button" value=" Mostrar" onclick="mostrar5(); ">Mostrar resultado</button>
+                    <button type="button" value=" Ocultar" onclick="ocultar5();">Ocultar resultado</button>
+                    <div id="resultado5">
+                        <p>
+                            Aplicando la fórmula:
+                            <img src="../Images/adicionales/csrr1.png" alt="">
+                            Resolución:
+                            <img src="../Images/adicionales/csrr2.png" alt="">
+
+                        </p>
+                    
+                    </div>
+                </div>
+                    
+                <!-- cm adiciones-fin  -->
+
             </div>
         </section>
         <section>
