@@ -1,0 +1,33 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    height: 100%;
+    background-image: linear-gradient(#a5a7a1, #1ab0b0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50% 0%;
+  }
+
+  .container {
+padding: 50px 50px;
+
+  }
+
+  h1 {
+    
+text-align: center;
+  }
+
+  button {
+    
+padding: 25px 30px;
+  }
+
+  div {
+    
+padding: 20px 30px;
+  }
