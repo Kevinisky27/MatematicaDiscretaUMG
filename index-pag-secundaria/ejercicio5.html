@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introducción Matemática</title>
+    <title>Teoria de conjuntos</title>
     <link rel="icon" type="image/png" href="../Images/Favicon/Favicon UMG.png">
     <link rel="stylesheet" href="../estilos/estilos Header y Footer.css">
     <link rel="stylesheet" href="../icomoon/style.css">
     <link rel="stylesheet" href="../estilos/clase01.css">
     <link rel="stylesheet" href="../estilos/clase03.css">
+    <script src="../funciones/clase01.js"></script>
 </head>
 
 <body>
@@ -55,69 +56,33 @@
                     <a class="link" href="../index-pag-secundaria/clase11.html">Álgebra Vectorial </a>
                 </li>
                 <li>
-                    <a class="link" href="../index-pag-secundaria/clase12.html">Teoría de Probabilidad</a>
+                    <a class="link" href="../index-pag-secundaria/clase12.html">Teoría de Probabilidad </a>
                 </li>
 
                 </li>
             </ul>
         </nav>
     </header>
+
     <section class="contenido">
         <h1>
-            Inducción Matemática
+            ¿Que es la Teoria de Conjuntos?
         </h1>
-        <p>
-            La inducción matemática es un método de demostración que se utiliza cuando se trata de establecer la veracidad de una lista infinita de proposiciones.
-
-            <br>
-            <div class="conter-img2">
-                <img src="../Images/imagenes de temas/inducción matemática.png" alt="fuente: documento de power point">
-            </div>
+        <div>
             <p>
-                El método es bastante natural para usarse en una variedad de situaciones en la ciencia de la computación.
-
+                ¿De cuántas formas se puede cruzar un río, sabiendo que se dispone de 3 botes y 4 barcos?
             </p>
-        </p>
-        <p>
-            Los números naturales se definen de manera inductiva. Es decir, incluso hablando muy informalmente, al describir los números naturales no podemos nombrar a todos los números naturales puesto que son infinitos, lo que hacemos normalmente es decir algo
-            como “1 es un número natural, también 2 y 3 y 4 y así te sigues, si le sumas 1 a un número natural te da otro número natural”.
-        </p>
-        <h2>
-            Analogía de los Dominós
-        </h2>
-        <p>
-            Si ponemos todos nuestros dominós parados en una fila, necesitamos sólo asegurarnos de dos cosas para que se caigan:
-        </p>
-        <p><strong>
-            a) Que exista al menos un dominó que se caiga. <br>
-            b) Que si un dominó cae, empuja al siguiente. 
-        </strong>
-        </p>
-        <p>
-            Para la primera parte, no tiene que ser el primer dominó. Si tiramos el primero, queremos que se caigan todos; pero si tiramos el segundo o el tercero o el quinto, queremos que se caigan todos después el que tiramos.
-        </p>
-        <p>
-            Para la segunda parte tenemos que asegurarnos que la distancia entre cada dos dominós no sea demasiada o que estén en el ángulo correcto, porque si uno solo no empuja al que sigue, entonces no se van a caer todos.
-        </p>
-        <p>
-            Los números naturales son como un conjunto infinito pero ordenado de dominós, donde cada dominó tiene escrito un número. Las pruebas por inducción son como ordenar nuestros dominós parados en una fila y ver si es posible empujar alguno para que se caigan
-            todos.
-        </p>
-        <p>
-            <strong>
-                a) El caso base es asegurarse de que exista un primer dominó que se caiga. <br>   
-                b) El paso inductivo es suponer que si cumple para algún entero, cumple para el siguiente. Como sabemos que cumple para el caso base, entonces cumple para el siguiente; como cumple para el siguiente, cumple a su vez para su siguiente y así sucesivamente cumplen todos los enteros a partir del caso base.   
-            </strong>
-        </p>
-        <p>
-            Esos dos pasos nos aseguran que se caen todos los dominós sin necesidad de verlos caer.
-        </p>
-        <p>Ahora que ya tienes un pequeño concepto realícenoslo dinámico te invito a probar el siguiente programa el cual te ayudara en lo anterior mente visto disfrútalo. </p>
-                            <a href="../index-pag-secundaria/ejercicio2.html"blogs-button">
-                            <strong>
-                                ¡RESOLVAMOS EJERCICIOS!
-                            </strong> </a>
+            <button type="button" value=" Mostrar" onclick="mostrar(); ">Mostrar resultado</button>
+            <button type="button" value=" Ocultar" onclick="ocultar();">Ocultar resultado</button>
+            <div id="resultado1">
+                <p>
+                    3 botes <br> 4 barcos <br> Total: 3 + 4 = 7 <br> Respuesta: Se puede cruzar el río de 7 formas
+                </p>
+            </div>
+        
     </section>
+
+
     <footer class="footer">
         <div class="container-footer-all">
             <div class="container-body">
